@@ -20,6 +20,14 @@
 
 `pip install -r requirements.txt`
 
+- create database
+
+`python`
+
+`>>> from app import db`
+
+`>>> db.create_all()`
+
 #### Running the Sample App
 on your project root directory run the following command.
 
