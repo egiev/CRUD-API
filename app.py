@@ -19,7 +19,10 @@ class User(db.Model):
   firstname = db.Column(db.String(80))
   lastname = db.Column(db.String(80))
 
-
+  def __init__(self, firstname, lastname):
+    self.firstname = firstname
+    self.lastname = lastname
+    
   def to_dict(self):
     return {
       "id": self.id,
